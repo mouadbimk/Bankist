@@ -1,12 +1,5 @@
 "use strict";
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// BANKIST APP
-
-/////////////////////////////////////////////////
-// Data
-
 // DIFFERENT DATA! Contains movement dates, currency and locale
 
 const account1 = {
@@ -68,7 +61,7 @@ const account3 = {
     "2025-06-6T12:01:20.894Z",
   ],
   currency: "MAD",
-  locale: "ar-MA",
+  locale: "fr",
 };
 const accounts = [account1, account2, account3];
 
@@ -234,11 +227,10 @@ const startLogoutTimer = function () {
 
 // Event handlers
 let currentAccount, timer;
-
+console.log(accounts);
 btnLogin.addEventListener("click", function (e) {
   // Prevent form from submitting
   e.preventDefault();
-
   currentAccount = accounts.find(
     (acc) => acc.username === inputLoginUsername.value
   );
