@@ -1,0 +1,13 @@
+# Environment files
+.env
+
+# Log files
+*.log
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
