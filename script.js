@@ -57,11 +57,11 @@ const account3 = {
     "2020-04-10T14:43:26.374Z",
     "2020-06-25T18:49:59.371Z",
     "2020-07-26T12:01:20.894Z",
-    "2025-06-8T12:01:20.894Z",
-    "2025-06-6T12:01:20.894Z",
+    "2025-06-08T12:01:20.894Z",
+    "2025-06-06T12:01:20.894Z",
   ],
   currency: "MAD",
-  locale: "fr",
+  locale: "fr-FR",
 };
 const accounts = [account1, account2, account3];
 
@@ -227,7 +227,6 @@ const startLogoutTimer = function () {
 
 // Event handlers
 let currentAccount, timer;
-console.log(accounts);
 btnLogin.addEventListener("click", function (e) {
   // Prevent form from submitting
   e.preventDefault();
